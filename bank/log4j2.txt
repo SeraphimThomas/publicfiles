@@ -1,0 +1,8 @@
+2021-07-31 14:47:26,276 INFO c.Main [main] Program starting...
+2021-07-31 14:47:28,916 INFO c.Main [main] Starting login.
+2021-07-31 14:47:33,425 INFO c.Main [main] Login with Seraphim gangrel 20
+2021-07-31 14:47:33,429 INFO b.AccountDAO [main] Collecting information from database
+2021-07-31 14:47:33,940 INFO b.AccountDAO [main] Successful login for: Seraphim
+2021-07-31 14:47:33,943 INFO b.AccountManager [main] Printing out account for Seraphim
+2021-07-31 14:47:38,992 INFO c.Main [main] Depositing into acocunt
+2021-07-31 14:47:40,573 INFO c.Main [main] Program exited
