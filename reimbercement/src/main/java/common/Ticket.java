@@ -7,27 +7,41 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
 
+@Entity
+@Table(name="tickets")
 public class Ticket implements Serializable{
+
+		
 		@Id
 		@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "id_generator")
-		@SequenceGenerator(name = "id_generator", sequenceName = "menu_id_seq", allocationSize = 1)
-		private int employeeID;
-		
-		@Column
-		private String reason;
+		@SequenceGenerator(name = "id_generator", sequenceName = "tickets_ticketnumber_seq", allocationSize = 1)
+		@Column (name = "ticketNumber")
 		private int ticketNum;
+		@Column
+		private int employeeID;
+		@Column (name = "tickettype")
+		private String ticketType;
+//		@Column
+//		private String reason;
+		@Column (name = "ticketamount")
 		private double ticketVal;
+		@Column
 		private String comment;
+		
+
+
+		
 		
 		public Ticket() {
 			super();
 		}
-		public Ticket(int employeeID, String reason, int ticketNum, double ticketVal, String comment) {
+		public Ticket(int employeeID, String reason, String tickettype, double ticketVal, String comment) {
 			super();
 			this.employeeID = employeeID;
-			this.reason = reason;
-			this.ticketNum = ticketNum;
+//			this.reason = reason;
+			this.ticketType = tickettype;
 			this.ticketVal = ticketVal;
 			this.comment = comment;
 		}
@@ -37,11 +51,11 @@ public class Ticket implements Serializable{
 		public void setEmployeeID(int employeeID) {
 			this.employeeID = employeeID;
 		}
-		public String getReason() {
-			return reason;
+		public String getTicketType() {
+			return ticketType;
 		}
-		public void setReason(String reason) {
-			this.reason = reason;
+		public void setTicketType(String ticketType) {
+			this.ticketType = ticketType;
 		}
 		public int getTicketNum() {
 			return ticketNum;
@@ -63,7 +77,7 @@ public class Ticket implements Serializable{
 		}
 		@Override
 		public String toString() {
-			return "{" + this.employeeID+","+this.reason+","+this.ticketNum+","+this.ticketVal+","+this.comment+"}";
+			return "{" + this.employeeID+","+this.ticketType+","+this.ticketNum+","+this.ticketVal+","+this.comment+"}";
 		}
 		
 }

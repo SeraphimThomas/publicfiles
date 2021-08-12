@@ -1,15 +1,16 @@
 package reDAO;
 
+import java.sql.PreparedStatement;
 import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.*;
-//import org.apache.logging.log4j.LogManager;
-//import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import common.*;
 
 public class ReDAO implements Constants{
-//	private static final Logger logger = LogManager.getLogger(ReDAO.class.getName());
+private static final Logger logger = LogManager.getLogger(ReDAO.class.getName());
 
 	
 	public void create(Ticket ticket) {
@@ -19,10 +20,12 @@ public class ReDAO implements Constants{
 		try {
 			tx = session.beginTransaction();
 			session.save(ticket);
+//			session.setInt(1, ticket.getEmployeeID())
 			tx.commit();
 		}catch (HibernateException e) {
 			if (tx != null) {
 				tx.rollback();
+				logger.warn("Error in database");
 			}
 			throw e;
 		}
@@ -38,10 +41,10 @@ public class ReDAO implements Constants{
 	}
 	
 
-	public Ticket findById(int ticketId) {
+	public Ticket findById(int empId) {
 		Session session = DBUtil.getInstance().getSession();
-		Query query = session.createQuery("FROM common.Ticket where ticketID = :ticketID");
-		query.setInteger("ticketID", ticketId);
+		Query query = session.createQuery("FROM common.Ticket where employeeid = :employeeid");
+		query.setInteger("employeeid", empId);
 		
 		Ticket tickets = (Ticket) query.uniqueResult();
 		
