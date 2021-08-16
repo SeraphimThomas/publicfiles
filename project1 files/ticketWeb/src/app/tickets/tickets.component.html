@@ -1,0 +1,46 @@
+<h2>Here are the current tickets for all vampires in the city</h2>
+    <h3>{{ticket.employeeID}}</h3>
+<div>
+    <form class="createTicket" (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <h1>Create a new Ticket</h1>
+        <label for="employeeID">Employee ID: </label>
+        <input id="employeeID" type="text" name="employeeID" 
+        [(ngModel)] ="ticket.employeeID"
+        placeholder="Employee Number">
+        <p></p>
+        <label for="ticketVal">Value: </label>
+        <input id="ticketVal" type = "text" name="ticketVal" placeholder="Amount">
+        <p></p>
+        <label for="tickeType">Type of Ticket: </label>
+            <div>
+                <span>
+                <input type="radio" id="lodging" name="ticketType" value = "lodging" checked>
+                <label for="lodging">Lodging</label>
+                <input type="radio" id="travel" name="ticketType" value="travel">
+                <label for="travel">Travel</label>
+                <input type="radio" id="food" name="ticketType" value="food">
+                <label for="food">Food</label>
+                <input type="radio" id="other" name="ticketType" value="other">
+                <label for="other">Other</label>
+                </span>
+            </div>
+        <label for="comment">Comments: </label>
+        <input id ="comment" type="text" name="comment" placeholder="Commnets">
+        <p></p>
+        <button type="submit">Submit New Ticket</button>
+    </form>
+
+</div>
+
+<div>
+</div>
+    <ul class="tickets">
+        <li *ngFor='let ticket of tickets'
+        [class.selected]= "ticket === selectedTicket"
+        (click)="onSelect(ticket)">
+                <span class='badge1'>{{ticket.ticketNum}}</span> {{ ticket.ticketType | uppercase }} 
+            {{ticket.ticketVal | currency : 'USD' }}
+        </li>
+        <button (click)="logout()">Logout</button>
+    </ul>
+    <app-ticket-detail [ticket]="selectedTicket"></app-ticket-detail>

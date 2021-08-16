@@ -1,0 +1,19 @@
+<div>
+    <h2>{{login.id}}</h2>
+    <h3>{{login.password}}</h3>
+    <form class="main" (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <label for="empId">Employee ID: </label>
+        <input id="empID" type = "text" [(ngModel)]="login.id"
+        name = "id"
+        placeholder="Employee ID">
+        <p></p>
+        <label for="password">Password: </label>
+        <input id="password" type = "password" [(ngModel)]="login.password"
+        name = "password"
+        placeholder="Password">
+        <p></p>
+        <button type="submit">Submit</button>
+        
+    </form>
+
+</div>

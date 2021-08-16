@@ -1,0 +1,10 @@
+div{
+    display: flexbox;
+    flex-basis: content;
+    text-align: center;
+    color: rgb(160, 5, 5);
+    background-color: rgb(48, 45, 45);
+}
+p{
+    size: 20pt;
+}
