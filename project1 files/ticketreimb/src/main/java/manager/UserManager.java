@@ -5,11 +5,12 @@ import reDAO.ReDAO;
 
 public class UserManager {
 	ReDAO dao = new ReDAO();
+	User user = new User();
 	
 	public UserManager() {}
 	
-//	public void create(User user) {
-//		dao.createUser(user);
+//	public createUser() {
+//		user = 
 //	}
 	
 	public boolean login (int employeeId, String password) {

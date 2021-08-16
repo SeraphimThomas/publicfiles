@@ -21,6 +21,7 @@ import manager.UserManager;
 @WebServlet("/login")
 
 public class UserServlet extends HttpServlet{
+	static User user;
 
 	private UserManager manager = new UserManager();
 	@Override
@@ -28,9 +29,12 @@ public class UserServlet extends HttpServlet{
 		try {
 			//get JSON data
 			ObjectMapper mapper = new ObjectMapper();
-			User user = mapper.readValue(HttpUtil.getJSONData(req), User.class);
+			user = mapper.readValue(HttpUtil.getJSONData(req), User.class);
 			//persist data to back-end
 			boolean success = manager.login(user.getEmployeeid(),user.getPassword());
+//			if (user.isManager()) {
+//			
+//		}
 			//send success response
 			
 			resp.getWriter().print( "{\"status\":"+ (success ? "\"success\"" : "\"failure\"")+"}");
