@@ -11,7 +11,7 @@ following requirements and give a 5 minute presentation of your project to our Q
 4. All input is received using the java.util.Scanner class. 
 5. Log4j is implemented to log events to a file. 
 6. A minimum of 10 JUnit test is written to test some functionality. 
-7. 
+
 Technologies Used
 
  Java 11, JDBC, DBeaver with Postgress, JUnit Test, and Log4j
