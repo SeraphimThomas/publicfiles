@@ -9,7 +9,9 @@ Technologies Used
 Features
 
  -Create new account
+ 
  -Deposit and withdraw funds
+ 
  -Delete accounts
 
 To-do list:
