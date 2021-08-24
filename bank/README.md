@@ -17,13 +17,17 @@ Features
 To-do list:
 
  -Transfer funds between accounts
+ 
  -Grant access to only specific accounts
+ 
  -Seperate account types
 
 Getting Started
 
  git clone https://github.com/SeraphimThomas/publicfiles/edit/main/bank
+ 
  Run SQL code into database script to create the tables needed
+ 
  Open Java code in IDE of choice and run
 
 Usage
