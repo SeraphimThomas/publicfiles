@@ -6,8 +6,8 @@ public interface Constants {
 	public static final String db_url = "db_url";
 	public static final String db_user = "db_user";
 	public static final String db_pass = "db_password";
-	public static final String error = "An error has occured.  Please check the information and try again."+
-										"/n ===============================";
+	public static final String error = "An error has occured.  Please check the information and try again./n"+
+										" ===============================";
 	public static final String calcError = "Invalid amount.  Please try again.";
 	public static final StringBuilder selectBal = new StringBuilder("SELECT * FROM bank_data.account_balance");
 	public static final StringBuilder insert = new StringBuilder("INSERT INTO bank_data");

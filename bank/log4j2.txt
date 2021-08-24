@@ -6,3 +6,61 @@
 2021-07-31 14:47:33,943 INFO b.AccountManager [main] Printing out account for Seraphim
 2021-07-31 14:47:38,992 INFO c.Main [main] Depositing into acocunt
 2021-07-31 14:47:40,573 INFO c.Main [main] Program exited
+2021-08-01 12:12:26,565 INFO c.Main [main] Program starting...
+2021-08-01 12:12:28,682 INFO c.Main [main] Starting login.
+2021-08-01 12:12:32,182 INFO c.Main [main] Login with Seraphim gangrel 20
+2021-08-01 12:12:32,186 INFO b.AccountDAO [main] Collecting information from database
+2021-08-01 12:12:32,489 INFO b.AccountDAO [main] Successful login for: Seraphim
+2021-08-01 12:12:32,490 INFO b.AccountManager [main] Printing out account for Seraphim
+2021-08-01 12:12:36,759 INFO c.Main [main] Depositing into acocunt
+2021-08-01 12:12:41,576 INFO c.Main [main] Program starting...
+2021-08-01 12:12:42,579 INFO c.Main [main] Program exited
+2021-08-02 09:13:36,292 INFO c.Main [main] Program starting...
+2021-08-02 09:13:42,171 INFO c.Main [main] Starting login.
+2021-08-02 09:13:50,103 INFO c.Main [main] Login with Seraphim gangrel 20
+2021-08-02 09:13:50,114 INFO b.AccountDAO [main] Collecting information from database
+2021-08-02 09:13:50,616 INFO b.AccountDAO [main] Successful login for: Seraphim
+2021-08-02 09:13:50,618 INFO b.AccountManager [main] Printing out account for Seraphim
+2021-08-02 09:14:04,049 INFO c.Main [main] Program starting...
+2021-08-02 09:14:11,546 INFO c.Main [main] Starting login.
+2021-08-02 09:14:15,849 INFO c.Main [main] Login with Seraphim gangrel 20
+2021-08-02 09:14:15,849 INFO b.AccountDAO [main] Collecting information from database
+2021-08-02 09:14:15,852 INFO b.AccountDAO [main] Successful login for: Seraphim
+2021-08-02 09:14:15,852 INFO b.AccountManager [main] Printing out account for Seraphim
+2021-08-02 09:14:21,407 INFO c.Main [main] Depositing into acocunt
+2021-08-02 09:14:46,838 INFO c.Main [main] Program starting...
+2021-08-02 09:14:58,748 ERROR c.Main [main] Invalid input
+2021-08-02 09:14:58,748 INFO c.Main [main] Program starting...
+2021-08-02 09:15:25,601 INFO b.AccountDAO [main] Creating new account
+2021-08-02 09:15:25,606 INFO b.AccountDAO [main] Successfully created new account with nosfer_40
+2021-08-02 09:15:25,608 INFO b.AccountManager [main] Printing out account for nosfer_40
+2021-08-02 09:15:41,576 INFO c.Main [main] Program starting...
+2021-08-02 09:15:51,655 ERROR c.Main [main] Invalid input
+2021-08-02 09:15:51,655 INFO c.Main [main] Program starting...
+2021-08-02 09:16:07,410 INFO c.Main [main] Starting login.
+2021-08-02 09:16:21,608 INFO c.Main [main] Login with nosfer_40 smithy_20 80
+2021-08-02 09:16:21,608 INFO b.AccountDAO [main] Collecting information from database
+2021-08-02 09:16:21,610 INFO b.AccountDAO [main] Successful login for: nosfer_40
+2021-08-02 09:16:21,611 INFO b.AccountManager [main] Printing out account for nosfer_40
+2021-08-02 09:16:24,773 INFO c.Main [main] Deletion of account
+2021-08-02 09:16:32,370 WARN b.AccountDAO [main] An error occured in contacting the database.
+2021-08-02 09:16:43,720 INFO c.Main [main] Starting login.
+2021-08-02 09:16:52,933 INFO c.Main [main] Login with nosfer_40 smithy_20 80
+2021-08-02 09:16:52,934 INFO b.AccountDAO [main] Collecting information from database
+2021-08-02 09:16:52,935 INFO b.AccountDAO [main] Successful login for: nosfer_40
+2021-08-02 09:16:52,936 INFO b.AccountManager [main] Printing out account for nosfer_40
+2021-08-02 09:16:56,523 INFO c.Main [main] Deletion of account
+2021-08-02 09:17:01,164 INFO b.AccountDAO [main] Deleted account
+2021-08-02 09:17:05,188 INFO c.Main [main] Starting login.
+2021-08-02 09:17:19,836 INFO c.Main [main] Login with noser_40 smithy_20 80
+2021-08-02 09:17:19,836 INFO b.AccountDAO [main] Collecting information from database
+2021-08-02 09:17:38,310 INFO c.Main [main] Program exited
+2021-08-24 10:43:32,248 INFO c.Main [main] Program starting...
+2021-08-24 10:45:19,614 INFO c.Main [main] Starting login.
+2021-08-24 10:45:27,323 INFO c.Main [main] Login with Seraphim gangrel 40
+2021-08-24 10:45:27,329 INFO b.AccountDAO [main] Collecting information from database
+2021-08-24 10:46:16,068 INFO c.Main [main] Starting login.
+2021-08-24 10:46:21,161 INFO c.Main [main] Login with Seraphim gangrel 20
+2021-08-24 10:46:21,161 INFO b.AccountDAO [main] Collecting information from database
+2021-08-24 10:46:21,165 INFO b.AccountDAO [main] Successful login for: Seraphim
+2021-08-24 10:46:21,168 INFO b.AccountManager [main] Printing out account for Seraphim

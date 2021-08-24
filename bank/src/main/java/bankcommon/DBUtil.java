@@ -11,13 +11,9 @@ public class DBUtil implements Constants{
 	private Connection conn = null;
 	//FileInputStream inputStream = new FileInputStream("C:\\Users\\foxbo\\GitHubRoot\\SpringTools\\bank\\src\\main\\resources\\config.properties");
 	
-	private DBUtil() {
-	//try {
-	//		conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres","postgres","gangrel89");
-	//	}catch(SQLException e) {
-	//		e.printStackTrace();
-	//	}
+	private DBUtil() { //default constructor
 	}
+	//create conncection
 	public static DBUtil getInstance() {
 		if(_instatnce == null) {
 			_instatnce = new DBUtil();

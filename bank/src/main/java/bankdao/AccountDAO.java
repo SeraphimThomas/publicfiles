@@ -43,7 +43,7 @@ public class AccountDAO implements Constants{
 			rs.next();
 			}	
 		} catch (SQLException e) {
-			e.printStackTrace();
+		//	e.printStackTrace();
 			System.err.println(error);
 		}
 		return accountInfo; //If it fails, it will return null values for user to realize login failed

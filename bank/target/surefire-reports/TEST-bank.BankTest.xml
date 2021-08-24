@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="0" name="bank.BankTest" time="0.002" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="bank.BankTest" time="0.005" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="16.0.1+9-24"/>
@@ -25,7 +25,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\foxbo\GitHubRoot\SpringTools\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8601012269856286637.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\foxbo\GitHubRoot\SpringTools\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2203185423079834200.tmp"/>
     <property name="jansi.force" value="true"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Users\foxbo\sts-4.11.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/foxbo/sts-4.11.0.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin/server;C:/Users/foxbo/sts-4.11.0.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin;C:\Python39\Scripts\;C:\Python39\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_291\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk-11.0.11\bin;C:\Program Files\Java\jdk1.8.0_291\bin;C:\Users\foxbo\AppData\Local\Microsoft\WindowsApps;C:\Program Files\apache-maven-3.8.1\bin;;C:\Users\foxbo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\foxbo\AppData\Roaming\npm;C:\Users\foxbo\sts-4.11.0.RELEASE;;."/>
@@ -59,14 +59,14 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="bank.BankTest" name="checkBalanceFail" time="0.002"/>
+  <testcase classname="bank.BankTest" name="checkBalanceFail" time="0.003"/>
   <testcase classname="bank.BankTest" name="checkBalancePass" time="0"/>
   <testcase classname="bank.BankTest" name="testAccountSet" time="0"/>
   <testcase classname="bank.BankTest" name="failedLoginTest" time="0"/>
   <testcase classname="bank.BankTest" name="testAccountGetFail" time="0"/>
   <testcase classname="bank.BankTest" name="incorrectUsernameFail" time="0"/>
-  <testcase classname="bank.BankTest" name="checkBalanceWithNeg" time="0"/>
+  <testcase classname="bank.BankTest" name="checkBalanceWithNeg" time="0.001"/>
   <testcase classname="bank.BankTest" name="careatingNegAmount" time="0"/>
-  <testcase classname="bank.BankTest" name="testAccountsCompareFail" time="0"/>
+  <testcase classname="bank.BankTest" name="testAccountsCompareFail" time="0.001"/>
   <testcase classname="bank.BankTest" name="testAccountsComparePass" time="0"/>
 </testsuite>
